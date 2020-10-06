@@ -3,9 +3,29 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
-        <title></title>
+        <title>Car MPG & km/L Calculator</title>
     </head>
-    <body>
+<body>
+    <main>
+        <h1>FueL Efficiency Calculator</h1>
 
-    </body>
+        <label for="miles-kilometers"> Choose MPG or km/L:</label>
+        <select name="unit" id="unit">
+            <option value="mpg">MPG</option>
+            <option value="kmL">km/L</option>
+        </select>
+
+        <h3>Distance Driven</h3>
+        <input id="miles" value="" type="number">
+
+        <h3>Tank Size</h3>
+        <input id="tank" value="" type="number">
+
+        <h3>Estimated Fuel Efficiency</h3>
+        <div id="effiency">0.00</div>
+    </main>
+
+
+</body>
+
 </html>
