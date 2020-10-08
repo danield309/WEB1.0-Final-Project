@@ -9,25 +9,34 @@
 <body>
 
     <main>
+        <form>
 
-        <h1>Fuel Efficiency Calculator</h1>
-
+            <h1>Fuel Efficiency Calculator</h1>
+<!--- Drop down unit ----->
+    <div class="dropdown">
         <label for="miles-kilometers"> Choose MPG or km/L:</label>
         <select id="unit">
             <option value="mpg">MPG</option>
             <option value="km/L">km/L</option>
         </select>
-
+    </div>
+<!--- Input distance ---->
+    <div class="input1">
         <h3>Distance Driven</h3>
         <input id="distance" value="" type="number">
-
+    </div>
+<!-- Input size of tank ---->
+    <div class="input2">
         <h3>Tank Size</h3>
         <input id="tank" value="" type="number">
-
+    </div>
+<!-- Output your fuel efficiency --------->
+    <div class="output">
         <h3>Estimated Fuel Efficiency</h3>
         <div id="efficiency">0.00</div>
-
+    </div>
     </main>
+        </form>
 
 <script src="script.js"></script>
 
